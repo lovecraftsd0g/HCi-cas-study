@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="thcsthing.css">
+</head>
+
+    <body>
+        <p id="haha"></p>
+        <div class="wholething">
+            <div class="item1">input your grade <input id="somber1" class="suf1" type="text"> </div>
+            <div class="item2">input your grade <input id="somber2" class="suf2" type="text"> </div>
+            <div class="item3">input your grade <input id="somber3" class="suf3"  type="text"> </div>
+            <div class="item4">input your grade <input id="somber4" class="suf4" type="text"> </div>
+            <div class="item5 appear" id="the_im"><img src="the_man.jpg" width="300" height="365"></div>
+        </div>
+
+        <button onclick="some()">Check</button>
+    </body>
+    <script>
+        
+        iiim= document.getElementById("the_im");
+
+        function some(){
+            x1 = document.getElementById("somber1").value;
+            x2 = document.getElementById("somber2").value;
+            x3 = document.getElementById("somber3").value;
+            x4 = document.getElementById("somber4").value;
+            
+            if (x1 != "" && x2 != "" && x3 != "" && x4 != "") {
+                
+                iiim.classList.add("appear")
+            } else {
+                iiim.classList.remove("appear")
+            }
+        }
+
+        some()
+    </script>
+</html>
